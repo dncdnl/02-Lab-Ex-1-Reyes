@@ -15,7 +15,9 @@ namespace CalculatorApplication
         public FrmCalculator()
         {
             InitializeComponent();
+            cal = new CalculatorClass();
         }
-
+        // declaring and initializing the CalculatorClass
+        CalculatorClass cal = new CalculatorClass();
     }
 }
