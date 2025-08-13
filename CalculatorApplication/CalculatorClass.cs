@@ -8,5 +8,7 @@ namespace CalculatorApplication
 {
     internal class CalculatorClass
     {
+        // Declaring a generic Formula
+        public delegate X Formula<X>(X arg1);
     }
 }
