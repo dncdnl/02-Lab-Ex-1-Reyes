@@ -12,9 +12,9 @@ namespace CalculatorApplication
     {
         //setting variable and data type
         public Formula<double> formula;
-    }
+
         //Method creation
-    public static double getSum(double num1, double num2)
+        public static double getSum(double num1, double num2)
         {
             return num1 + num2;
         }
@@ -22,4 +22,17 @@ namespace CalculatorApplication
         {
             return num1 - num2;
         }
+        // Event accessor with two mwthods
+        public event Formula<double> CalculateEvent
+        {
+            add { Console.WriteLine("Added the delegate");
+                formula += value; 
+            }
+            remove { 
+                Console.WriteLine("Removed the delegate");
+                formula -= value;
+            }
+        }
+       
     }
+}
