@@ -12,6 +12,9 @@ namespace CalculatorApplication
 {
     public partial class FrmCalculator : Form
     {
+        //declaring variables for num1 and num2
+        double num1 = 0;
+        double num2 = 0;
         public FrmCalculator()
         {
             InitializeComponent();
@@ -19,5 +22,6 @@ namespace CalculatorApplication
         }
         // declaring and initializing the CalculatorClass
         CalculatorClass cal = new CalculatorClass();
+
     }
 }
