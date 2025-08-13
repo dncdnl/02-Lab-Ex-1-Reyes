@@ -22,6 +22,19 @@ namespace CalculatorApplication
         {
             return num1 - num2;
         }
+        // Adding Product and Quotient return type methods
+        public static double getProduct(double num1, double num2)
+        {
+            return num1 * num2;
+        }
+        public static double getQuotient(double num1, double num2)
+        {
+            if (num2 == 0)
+            {
+                throw new DivideByZeroException("Cannot divide by zero");
+            }
+            return num1 / num2;
+        }
         // Event accessor with two mwthods
         public event Formula<double> CalculateEvent
         {
