@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.FirstNum = new System.Windows.Forms.Label();
             this.SecondNum = new System.Windows.Forms.Label();
-            this.txtBoxInout1 = new System.Windows.Forms.TextBox();
+            this.txtBoxInput1 = new System.Windows.Forms.TextBox();
             this.txtBoxInput2 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblAnswer = new System.Windows.Forms.Label();
@@ -67,14 +67,14 @@
             this.SecondNum.TabIndex = 2;
             this.SecondNum.Text = "Enter Second Number:";
             // 
-            // txtBoxInout1
+            // txtBoxInput1
             // 
-            this.txtBoxInout1.BackColor = System.Drawing.Color.Honeydew;
-            this.txtBoxInout1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxInout1.Location = new System.Drawing.Point(205, 22);
-            this.txtBoxInout1.Name = "txtBoxInout1";
-            this.txtBoxInout1.Size = new System.Drawing.Size(130, 26);
-            this.txtBoxInout1.TabIndex = 3;
+            this.txtBoxInput1.BackColor = System.Drawing.Color.Honeydew;
+            this.txtBoxInput1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxInput1.Location = new System.Drawing.Point(205, 22);
+            this.txtBoxInput1.Name = "txtBoxInput1";
+            this.txtBoxInput1.Size = new System.Drawing.Size(130, 26);
+            this.txtBoxInput1.TabIndex = 3;
             // 
             // txtBoxInput2
             // 
@@ -130,6 +130,7 @@
             this.btnEqual.TabIndex = 8;
             this.btnEqual.Text = "Calculate";
             this.btnEqual.UseVisualStyleBackColor = false;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // FrmCalculator
             // 
@@ -142,7 +143,7 @@
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtBoxInput2);
-            this.Controls.Add(this.txtBoxInout1);
+            this.Controls.Add(this.txtBoxInput1);
             this.Controls.Add(this.SecondNum);
             this.Controls.Add(this.FirstNum);
             this.Controls.Add(this.label1);
@@ -158,7 +159,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label FirstNum;
         private System.Windows.Forms.Label SecondNum;
-        private System.Windows.Forms.TextBox txtBoxInout1;
+        private System.Windows.Forms.TextBox txtBoxInput1;
         private System.Windows.Forms.TextBox txtBoxInput2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblAnswer;

@@ -23,5 +23,11 @@ namespace CalculatorApplication
         // declaring and initializing the CalculatorClass
         CalculatorClass cal = new CalculatorClass();
 
+        private void btnEqual_Click(object sender, EventArgs e)
+        {
+            //getting the values
+            num1 = Convert.ToDouble(txtBoxInput1.Text);
+            num2 = Convert.ToDouble(txtBoxInput2.Text);
+        }
     }
 }
