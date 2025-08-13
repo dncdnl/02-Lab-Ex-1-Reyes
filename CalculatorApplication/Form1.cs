@@ -47,6 +47,8 @@ namespace CalculatorApplication
             {
                 cal.CalculateEvent += CalculatorClass.getQuotient;
             }
+            //displaying the result
+            lblDisplayTotal.Text = cal.formula(num1, num2).ToString();
         }
 
     }
