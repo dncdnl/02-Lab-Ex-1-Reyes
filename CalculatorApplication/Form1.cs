@@ -15,6 +15,7 @@ namespace CalculatorApplication
         //declaring variables for num1 and num2
         double num1 = 0;
         double num2 = 0;
+
         public FrmCalculator()
         {
             InitializeComponent();
@@ -28,6 +29,25 @@ namespace CalculatorApplication
             //getting the values
             num1 = Convert.ToDouble(txtBoxInput1.Text);
             num2 = Convert.ToDouble(txtBoxInput2.Text);
+
+            // validating selected arithmitic operation
+            if (comboBox1.SelectedItem.ToString() == "+")
+            {
+                cal.CalculateEvent += CalculatorClass.getSum;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "-")
+            {
+                cal.CalculateEvent += CalculatorClass.getDifference;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "*")
+            {
+                cal.CalculateEvent += CalculatorClass.getProduct;
+            }
+            else if (comboBox1.SelectedItem.ToString() == "/")
+            {
+                cal.CalculateEvent += CalculatorClass.getQuotient;
+            }
         }
+
     }
 }
