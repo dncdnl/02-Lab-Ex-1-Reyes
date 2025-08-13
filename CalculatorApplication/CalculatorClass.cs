@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace CalculatorApplication
 {
+    // Declaring a generic Formula
+    public delegate X Formula<X>(X arg1);
     internal class CalculatorClass
     {
-        // Declaring a generic Formula
-        public delegate X Formula<X>(X arg1);
+        public Formula<double> formula;
     }
 }
